@@ -40,7 +40,7 @@ function showWeatherReport(weather){
     city.innerText = `${weather.name},${weather.sys.country}`;
 
     const temperature = document.getElementById('temp');
-    temperature.innerHTML = `${Math.round(weather.main.temp)},&deg;C`;
+    temperature.innerHTML = `${Math.round(weather.main.temp)}&deg;C`;
 
     const minMaxTemp = document.getElementById('min-max');
     minMaxTemp.innerHTML = `${Math.floor(weather.main.temp_min)}&deg;C(min) / ${Math.ceil(weather.main.temp_max)}&deg;C(max)`;
